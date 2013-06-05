@@ -1,5 +1,5 @@
 (ns finance.core-test
-  (:use [finance.core])
+  (:use [finance core chart])
   (:use [midje.sweet]))
 
 (facts "about the Average American screen"
