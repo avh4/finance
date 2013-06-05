@@ -1,7 +1,4 @@
 (ns finance.core-test
-  (:require [clojure.test :refer :all]
-            [finance.core :refer :all]))
-(ns finance.core-test
   (:use [finance.core])
   (:use [midje.sweet]))
 
