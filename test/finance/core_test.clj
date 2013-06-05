@@ -1,8 +1,8 @@
-(ns {{ project }}.core-test
+(ns finance.core-test
   (:require [clojure.test :refer :all]
-            [{{ project }}.core :refer :all]))
-(ns {{ project }}.core-test
-  (:use [{{ project }}.core])
+            [finance.core :refer :all]))
+(ns finance.core-test
+  (:use [finance.core])
   (:use [midje.sweet]))
 
 (facts "about failing tests"
