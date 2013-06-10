@@ -1,5 +1,6 @@
 (ns finance.chart
-  (:use [fui drawing]))
+  (:require [deft [color :as color]])
+  (:use [deft drawing]))
 
 (defn chart-x-axis
   ([label x-min x-max maj-step] (chart-x-axis label x-min x-max maj-step maj-step))
@@ -30,7 +31,7 @@
 (defn retirement-chart [title start-age start-income]
   (let [data (retirement-data start-age start-income 100)
         max-y (round-number (max-y-value data))]
-    [(draw-text title 0 10)
+    [(drawn-text title 0 10 (color/rgb 0 0 0) "Lucida Grande" 13)
      (chart-x-axis "Age" start-age 100 1)
      (chart-y-axis "Retirement assets (USD)" 0 max-y (nice-step max-y))
      (chart-line-plot [start-age 100] [0 max-y] data)]))
