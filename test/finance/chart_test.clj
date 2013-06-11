@@ -1,6 +1,7 @@
 (ns finance.chart-test
+  (:require [deft [color-basic :as color]])
   (:use [finance chart])
-  (:use [fui drawing])
+  (:use [deft drawing])
   (:use [midje.sweet]))
 
 (def max-age 100)
@@ -10,7 +11,7 @@
   (fact "it has a chart title"
     (retirement-chart ..title.. .age. .income.) => (contains ..title-rendering..)
     (provided
-      (draw-text ..title.. 0 10) => ..title-rendering..))
+      (drawn-text ..title.. 0 10 color/black "Lucida Grande" 13) => ..title-rendering..))
   (fact (str "it has an x-axis showing age up to " max-age)
     (retirement-chart .title. ..age.. .income.) => (contains ..x-axis-rendering..)
     (provided
