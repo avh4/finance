@@ -1,10 +1,12 @@
 (ns finance.chart
-  (:require [deft [color :as color]])
+  (:require [deft [color :as color] [color-basic :as c]])
   (:use [deft drawing]))
 
+(def axis-color c/black)
 (defn chart-x-axis
   ([label x-min x-max maj-step] (chart-x-axis label x-min x-max maj-step maj-step))
-  ([label x-min x-max maj-step min-step]))
+  ([label x-min x-max maj-step min-step]
+    [(solid-rect [10 100 300 1] axis-color)]))
 (defn chart-y-axis [label y-min y-max maj-step])
 (defn chart-line-plot [[x-min x-max] [y-min y-max] data])
 
