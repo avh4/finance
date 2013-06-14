@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: lamina:lamina:0.5.0-beta9">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/lamina/lamina/0.5.0-beta9/lamina-0.5.0-beta9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

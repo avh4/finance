@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: net.avh4.clj:deft:0.4.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/avh4/clj/deft/0.4.0-SNAPSHOT/deft-0.4.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
